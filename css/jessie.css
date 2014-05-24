@@ -12,7 +12,9 @@ body {
 	padding-bottom: 8px;
 	margin: 0;
 }
-
+#phototext{
+	font-size:12px;
+}
 #layout-menu {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
