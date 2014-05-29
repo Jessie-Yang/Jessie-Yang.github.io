@@ -142,24 +142,24 @@ B.S.  in <strong><em>Environmental  Scienc</em></strong><strong><em>e</em></stro
 <p>This paper has been accepted for publication by <em> Transportation Research Record, Journal of  Transportation Research Board</em>. </p>
 <p>For the full version of the paper, please visit <a href="TRR 14-4217 Manuscript.pdf">HERE</a>.</p>
 <h4>Visualization of New York City 10-month taxi pick up trips aggregated into 24 hours</h4>
-<h4><img src="./gif/slow_start.gif" height="283" width="400"/></h4>
-<h4>Visualization of New York City 10-month taxi drop off trips aggregated into 24 hours</h4>
-<img src="./gif/slow.gif" height="283" width="400"/>
-</div>
-
-<script type="text/javascript" async="" src="./js/ga.js"></script><script type="text/javascript">
-    
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-47383369-1']);
-    _gaq.push(['_trackPageview']);
-    
-    (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-     
+<script type="text/javascript">
+  function ChangeGif(id,src){
+    document.getElementById(id).src = src;
+  }
 </script>
-
+<p>Change speed:   
+<input type="radio" name="start" checked="checked" onclick ="ChangeGif('start','./gif/start_slow.gif')">Slow
+<input type="radio" name="start" onclick="ChangeGif('start','./gif/start_mid.gif')">Medium
+<input type="radio" name="start" onclick="ChangeGif('start','./gif/start_fast.gif')">Fast
+<br></p>
+<h4><img id="start" src="./gif/start_slow.gif" height="283" width="400"/></h4>
+<h4>Visualization of New York City 10-month taxi drop off trips aggregated into 24 hours</h4>
+<p>Change speed:   
+<input type="radio" name="end" checked="checked" onclick ="ChangeGif('end','./gif/end_slow.gif')">Slow
+<input type="radio" name="end" onclick="ChangeGif('end','./gif/end_mid.gif')">Medium
+<input type="radio" name="end" onclick="ChangeGif('end','./gif/end_fast.gif')">Fast
+<br></p>
+<img id="end" src="./gif/end_slow.gif" height="283" width="400"/>
+</div>
 
 </body></html>
